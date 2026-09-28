@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9ff;
+    color: #17172b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Navbar */
+
+nav {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px #00000008;
+}
+
+nav h2 {
+    color: #17172b;
+}
+
+nav span {
+    color: #6c63ff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #6c63ff;
+}
+
+
+/* Common */
+
+section {
+    padding: 80px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #6c63ff;
+    margin: 8px auto;
+    border-radius: 10px;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(135deg, #f8f9ff, #eeeeff);
+}
+
+.hero p:first-child {
+    color: #6c63ff;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+}
+
+.hero h2 {
+    color: #555;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.desc {
+    max-width: 550px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #6c63ff;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #5148e5;
+    transform: translateY(-3px);
+}
+
+
+/* Code Box */
+
+.hero-box {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    background: #17172b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 0 #6c63ff;
+}
+
+.hero-box span {
+    color: #6c63ff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+/* About */
+
+.about {
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #00000008;
+}
+
+.about p {
+    color: #666;
+}
+
+
+/* Skills */
+
+#skills {
+    background: white;
+}
+
+.skills {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skills div {
+    padding: 20px;
+    text-align: center;
+    background: #f3f2ff;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.skills div:hover {
+    background: #6c63ff;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+/* Projects */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px #0000000d;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #6c63ff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* Contact */
+
+#contact {
+    background: #17172b;
+    color: white;
+    text-align: center;
+}
+
+#contact .title {
+    color: white;
+}
+
+.contact p {
+    color: #bbb;
+    margin-bottom: 8px;
+}
+
+.contact .btn {
+    margin-top: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #10101d;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 750px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-box span {
+        font-size: 50px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
